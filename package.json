@@ -8,8 +8,11 @@
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint --quiet",
+    "lint:ts": "tsc --noEmit",
+    "lint-fix": "next lint --quiet --fix",
+    "prettier-fix": "prettier --write \"**/*.*\""
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",
@@ -60,6 +63,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "genkit-cli": "^1.8.0",
+    "prettier": "^3.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
