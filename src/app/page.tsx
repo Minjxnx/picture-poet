@@ -331,6 +331,7 @@ export default function PicturePoetPage() {
         <p>
           &copy; {new Date().getFullYear()} Picture Poet. All rights reserved.
         </p>
+        <p>Developed with ❤️ by Minjxnx</p>
       </footer>
     </div>
   );
